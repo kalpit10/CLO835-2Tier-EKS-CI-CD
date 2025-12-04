@@ -7,7 +7,7 @@ spec:
   # The assignment requires the use of the default gp2 StorageClass, 
   # which Kubernetes handles automatically in EKS.
   # We omit storageClassName to use the default EKS provisioner.
-  
+  storageClassName: gp2
   accessModes:
     - ReadWriteOnce         # REQUIRED: Can only be mounted by one node at a time
   resources:
